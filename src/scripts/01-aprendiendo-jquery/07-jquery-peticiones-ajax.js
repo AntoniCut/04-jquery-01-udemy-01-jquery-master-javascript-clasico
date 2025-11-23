@@ -123,15 +123,40 @@
 
                         arrUsers.push(`
                     
-                        <article class="info-user"> 
-                            <p class="user-field">ID: ${id}</p>
-                            <p class="user-field">Name: ${name}</p>
-                            <p class="user-field">Username: ${username}</p> 
-                            <p class="user-field">Email: ${email}</p>
-                            <p class="user-field">Phone: ${phone}</p>
-                            <p class="user-field">Website: ${website}</p>
-                        </article>
-                    `);
+                            <article class="info__user"> 
+                            
+                                <p class="user__field">
+                                    <span class="user__label"> ID </span>
+                                    <span class="user__value"> ${id} </span>
+                                </p>
+
+                                <p class="user__field">
+                                    <span class="user__label"> Name </span>
+                                    <span class="user__value"> ${name} </span>
+                                </p>
+
+                                <p class="user__field">
+                                    <span class="user__label"> Username </span>
+                                    <span class="user__value"> ${username} </span>
+                                </p> 
+
+                                <p class="user__field">
+                                    <span class="user__label"> Email </span>
+                                    <span class="user__value"> ${email} </span>
+                                </p>
+
+                                <p class="user__field">
+                                    <span class="user__label"> Phone </span>
+                                    <span class="user__value"> ${phone} </span>
+                                </p>
+
+                                <p class="user__field">
+                                    <span class="user__label"> Website </span>
+                                    <span class="user__value"> ${website} </span>
+                                </p>
+                            
+                            </article>
+                        `);
 
                     });
 
@@ -174,12 +199,12 @@
          * @type {UserResponse}
          */
         const newUser = {
-            id: Number($('input[name="id"]').val() || 0),
-            name: String($('input[name="name"]').val() || ''),
-            username: String($('input[name="username"]').val() || ''),
-            email: String($('input[name="email"]').val() || ''),
-            phone: String($('input[name="phone"]').val() || ''),
-            website: String($('input[name="website"]').val() || '')
+            id: Number($('input[name="idPost"]').val() || 0),
+            name: String($('input[name="namePost"]').val() || ''),
+            username: String($('input[name="usernamePost"]').val() || ''),
+            email: String($('input[name="emailPost"]').val() || ''),
+            phone: String($('input[name="phonePost"]').val() || ''),
+            website: String($('input[name="websitePost"]').val() || '')
         };
 
 
@@ -209,13 +234,39 @@
                  * @type {string}
                  */
                 const html = `
-                    <article class="info-user"> 
-                        <p class="user-field"> ID: ${id} </p>
-                        <p class="user-field"> Name: ${name} </p>
-                        <p class="user-field"> Username: ${username} </p> 
-                        <p class="user-field"> Email: ${email} </p>
-                        <p class="user-field"> Phone: ${phone} </p>
-                        <p class="user-field"> Website: ${website} </p>
+                    
+                    <article class="info__user"> 
+                            
+                        <p class="user__field">
+                            <span class="user__label"> ID </span>
+                            <span class="user__value"> ${id} </span>
+                        </p>
+
+                        <p class="user__field">
+                            <span class="user__label"> Name </span>
+                            <span class="user__value"> ${name} </span>
+                        </p>
+
+                        <p class="user__field">
+                            <span class="user__label"> Username </span>
+                            <span class="user__value"> ${username} </span>
+                        </p> 
+
+                        <p class="user__field">
+                            <span class="user__label"> Email </span>
+                            <span class="user__value"> ${email} </span>
+                        </p>
+
+                        <p class="user__field">
+                            <span class="user__label"> Phone </span>
+                            <span class="user__value"> ${phone} </span>
+                        </p>
+
+                        <p class="user__field">
+                            <span class="user__label"> Website </span>
+                            <span class="user__value"> ${website} </span>
+                        </p>
+                            
                     </article>
                 `;
 
@@ -226,7 +277,7 @@
             .done(function () {
 
                 setTimeout(() => {
-                    alert('Usuario añadido correctamente!!!');
+                    //alert('Usuario añadido correctamente!!!');
                     $formPost.trigger('reset');
 
                 }, 2000);
@@ -238,7 +289,7 @@
 
     /*
        -------------------------------------
-       ---------- 3. Método POST  ----------
+       ---------- 4. Método AJAX  ----------
        -------------------------------------
    */
 
@@ -249,7 +300,7 @@
      * @type {JQuery<HTMLFormElement>}
      */
     const $formAjax = $('#formularioAjax');
-    
+
     /**
      * - `datosAjax`: contenedor donde se mostrarán los datos enviados vía AJAX.
      * @type {JQuery<HTMLArticleElement>}
@@ -267,12 +318,12 @@
          * @type {UserResponse}
          */
         const newUser = {
-            id: Number($('input[name="id"]').val() || 0),
-            name: String($('input[name="name"]').val() || ''),
-            username: String($('input[name="username"]').val() || ''),
-            email: String($('input[name="email"]').val() || ''),
-            phone: String($('input[name="phone"]').val() || ''),
-            website: String($('input[name="website"]').val() || '')
+            id: Number($('input[name="idAjax"]').val() || 0),
+            name: String($('input[name="nameAjax"]').val() || ''),
+            username: String($('input[name="usernameAjax"]').val() || ''),
+            email: String($('input[name="emailAjax"]').val() || ''),
+            phone: String($('input[name="phoneAjax"]').val() || ''),
+            website: String($('input[name="websiteAjax"]').val() || '')
         };
 
 
@@ -288,12 +339,12 @@
 
             beforeSend: function () {
                 console.log("Enviando usuario");
-                alert("Enviando usuario...");
+                //alert("Enviando usuario...");
             },
 
 
             success: function (
-                
+
                 /**
                  * - Respuesta de la API con el array de usuarios.
                  * @type {UserResponse}  
@@ -310,23 +361,50 @@
                  * @type {string}
                  */
                 const html = `
-                    <article class="info-user"> 
-                        <p class="user-field">ID: ${id}</p>
-                        <p class="user-field">Name: ${name}</p>
-                        <p class="user-field">Username: ${username}</p> 
-                        <p class="user-field">Email: ${email}</p>
-                        <p class="user-field">Phone: ${phone}</p>
-                        <p class="user-field">Website: ${website}</p>
+                    
+                    <article class="info__user"> 
+                            
+                        <p class="user__field">
+                            <span class="user__label"> ID </span>
+                            <span class="user__value"> ${id} </span>
+                        </p>
+
+                        <p class="user__field">
+                            <span class="user__label"> Name </span>
+                            <span class="user__value"> ${name} </span>
+                        </p>
+
+                        <p class="user__field">
+                            <span class="user__label"> Username </span>
+                            <span class="user__value"> ${username} </span>
+                        </p> 
+
+                        <p class="user__field">
+                            <span class="user__label"> Email </span>
+                            <span class="user__value"> ${email} </span>
+                        </p>
+
+                        <p class="user__field">
+                            <span class="user__label"> Phone </span>
+                            <span class="user__value"> ${phone} </span>
+                        </p>
+
+                        <p class="user__field">
+                            <span class="user__label"> Website </span>
+                            <span class="user__value"> ${website} </span>
+                        </p>
+                            
                     </article>
                 `;
+
 
                 $datosAjax.append(html);
 
                 setTimeout(() => {
-                    alert('Petición realizada correctamente!!!');
+                    //alert('Petición realizada correctamente!!!');
                     $formAjax.trigger('reset');
                 }, 2000);
-                
+
 
             },
 
@@ -343,8 +421,6 @@
 
 
     });
-
-
 
 
 

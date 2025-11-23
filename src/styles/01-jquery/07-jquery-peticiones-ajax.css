@@ -51,19 +51,19 @@
 /*
     ----------------------------
     -----  2. Método GET  ------
-    -----  2. Método POST  -----
+    -----  3. Método POST  -----
+    -----  4. Método AJAX  -----
     ----------------------------
 */
 
-.main__section--get {
+/* .main__section--get {
     height: 52rem;   
-}
+} */
 
-
-.main__post {
+.main__section--post,
+.main__section--ajax {
     max-width: 160rem;
     width: 100%;
-    height: 110rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,60 +73,90 @@
     text-align: center;
 }
 
-.main__ajax {
-    max-width: 160rem;
+.section__post,
+.section__ajax {
     width: 100%;
-    height: 110rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4rem;
-    padding: 3rem;
-    border-radius: 0.5rem;
-    text-align: center;
+}
+
+@media (min-width: 768px) {
+    
+    .section__post,
+    .section__ajax {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 5rem;
+    }
 }
 
 #datosGet,
 #datosPost,
 #datosAjax {
     width: 100%;
-    height: 27rem;
+    height: 58rem;
     overflow-y: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 3rem;
-    padding: 3rem;
+    gap: 5rem;
+    padding: 5rem;
     background-color: #37384e;
 }
 
 #datosGet {
-    height: 27rem;
+    height: 30rem;
 }
 
-.info-user {
+
+/*  -----  User Info - Creada dinamicamente  -----  */
+
+.info__user {
     width: 30rem;
+    height: 21.5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
     padding: 1rem;
-    background-color: rgb(240, 230, 217);
+    background-color: #EEF2F8;
 }
 
-.user-field {
-    background-color: rgb(225, 247, 239);
+.user__field {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+}
+
+.user__label {
+    width: 30%;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    background-color: #d6cfc1;
+}
+
+.user__value {
+    width: 70%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #e8e4d9;
 }
 
 
-form {
+.main__section form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     background-color: #37384e;
     border-radius: 10px;
-    padding: 5rem;
+    padding: 2rem;
 }
 
 .form__input {
@@ -136,6 +166,12 @@ form {
     gap: 0.5rem;
     color: #fff;
     margin-bottom: 1rem;
+}
+
+.main__section input {
+    padding: 0.5rem;
+    color: black !important;
+    -webkit-text-fill-color: black !important;
 }
 
 input[type="submit"] {
