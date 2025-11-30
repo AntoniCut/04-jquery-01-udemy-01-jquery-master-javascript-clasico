@@ -1,0 +1,183 @@
+/*
+    -------------------------------------------------------------
+    ----------  /jquery.antonydev.tech/  ------------------------
+    ----------  /01-udemy/  -------------------------------------
+    ----------  /01-jquery-master-javascript-clasico/  ----------
+    ----------  /src/styles/components/layout/  -----------------
+    ----------  /layout.css  ------------------------------------
+    -------------------------------------------------------------
+*/
+
+
+:root {
+
+    /* ----- Colores principales ----- */
+    --color-primary: #036AAD;
+    --color-main-title: #d1dceb;
+    --color-grid: #e5e7eb;
+
+    /* ----- Fondos lisos ----- */
+    --bg-white: #ffffff;
+    --bg-light: #F7E7C0;
+    --bg-section-title: #FBFAFF;
+    --bg-dark: #1E293B;
+    --bg-dark-footer: #020617;
+
+    /*  -----  Background Cuadricula  -----  */
+    --bg-grid-light:
+        linear-gradient(to right, var(--color-grid) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--color-grid) 1px, transparent 1px);
+
+    /*  -----  Background Gradiente Header  -----  */
+    --bg-grid-pattern-header:
+        linear-gradient(to right, rgba(229, 231, 235, 0.8) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(229, 231, 235, 0.8) 1px, transparent 1px),
+        radial-gradient(circle 500px at 20% 100%, rgba(139, 92, 246, 0.3), transparent),
+        radial-gradient(circle 500px at 100% 80%, rgba(59, 130, 246, 0.3), transparent);
+
+    /*  -----  Background Gradiente Footer  -----  */
+    --bg-grid-pattern-footer:
+        linear-gradient(to right, rgba(71, 85, 105, 0.3) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(71, 85, 105, 0.3) 1px, transparent 1px),
+        radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+
+
+    /*  -----  Background Gradiente Main Section  -----  */
+    --bg-main-section:
+        radial-gradient(circle, rgb(255, 255, 255), rgb(219, 228, 240), rgb(176, 196, 236));
+
+    --bg-grid-size-48x48:
+        48px 48px,
+        48px 48px,
+        100% 100%,
+        100% 100%;
+
+    --bg-grid-size-32x32:
+        32px 32px,
+        32px 32px,
+        100% 100%;
+
+    --bg-grid-repeat: repeat;
+}
+
+
+html {
+    font-size: 10px;
+}
+
+body {
+    min-width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+
+/*  
+    --------------------------------------
+    -----  Loader Pantalla Completa  -----  
+    --------------------------------------
+*/
+
+.loader__container {
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(125% 125% at 50% 10%, #fff 40%, #6366f1 100%);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    z-index: 10000;
+    opacity: 1;
+    transition: opacity 1200ms ease-in-out;
+}
+
+.loader__container.fade-out {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.spinner {
+    width: 15rem;
+    height: 15rem;
+    border: 10px solid var(--color-primary);
+    border-top: 10px solid cornflowerblue;
+    border-radius: 100%;
+    animation: spin 1s linear infinite;
+}
+
+.loader__icon-jquery {
+    width: 30rem;
+    height: auto;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*
+    ------------------------------
+    ----------  Layout  ----------
+    ------------------------------
+*/
+
+.layout {
+    width: 100vw;
+    min-height: 100dvh;
+    overflow-y: auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 2rem; */
+    position: absolute;
+    overflow-x: hidden;
+    inset: 0;
+    z-index: 0;
+    background: radial-gradient(125% 125% at 50% 10%, #fff 40%, #6366f1 100%);
+    transition: opacity 1200ms ease-in-out;
+}
+
+.layout.fade-in {
+    display: flex;
+    opacity: 1;
+}
+
+.btn__container {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+button,
+input[type="submit"] {
+    padding: 1rem 2rem;
+    background-color: cornflowerblue;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 300ms ease-in-out;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: rgb(24, 56, 116);
+}

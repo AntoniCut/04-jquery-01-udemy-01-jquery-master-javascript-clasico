@@ -21,7 +21,7 @@ import { loadJQueryByCdnOLocal } from "./libs/jquery/load/load-jquery-by-cdn-loc
 import { cdnJQueryUI_1_14_1_min } from "./libs/jquery-ui/cdn/cdn-jquery-ui-1.14.1.min.js";
 import { loadJQueryUIByCdnOLocal } from "./libs/jquery-ui/load/load-jquery-ui-by-cdn-local.js";
 
-import { spaWithMethodLoadFromJQueryPlugins } from "./plugins/spa-with-method-load-from-jquery/jquery.spa-with-method-load-from-jquery.js";
+import { spaWithMethodLoadFromJQueryPlugins } from "./plugins/spa-with-method-load-from-jquery/v2/jquery.spa-with-method-load-from-jquery.js";
 import { spaUdemyJQueryMasterJavaScriptClasico } from "./spa/spa-udemy-jquery-master-javascript-clasico.js";
 
 

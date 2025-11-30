@@ -117,10 +117,10 @@
 
 .info__user {
     width: 30rem;
-    height: 21.5rem;
+    height: 22rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 1rem;
     padding: 1rem;
     background-color: #EEF2F8;
@@ -134,7 +134,7 @@
 }
 
 .user__label {
-    width: 30%;
+    width: 25%;
     font-size: 1rem;
     font-weight: bold;
     margin-right: 0.5rem;
@@ -143,7 +143,7 @@
 }
 
 .user__value {
-    width: 70%;
+    width: 75%;
     padding: 0.5rem;
     font-size: 1rem;
     background-color: #e8e4d9;

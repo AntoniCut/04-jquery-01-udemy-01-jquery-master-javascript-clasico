@@ -1,0 +1,117 @@
+/*
+    -------------------------------------------------------------
+    ----------  /jquery.antonydev.tech/  ------------------------
+    ----------  /01-udemy/  -------------------------------------
+    ----------  /01-jquery-master-javascript-clasico/  ----------
+    ----------  /src/styles/components/buttons/  ----------------
+    ----------  /buttons.css  -----------------------------------
+    -------------------------------------------------------------
+*/
+
+
+
+/*
+    ----------------------------------------------------------------
+    -----  Botón Hamburguesa Open del menú (navbar)  ---------------
+    -----  Botón Hamburguesa Open del menú (Themes jQuery UI)  -----
+    ----------------------------------------------------------------
+*/
+
+.navbar__btn-open,
+.navbar-themes-jquery-ui__btn-open {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    padding: 0.4rem;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 10000;
+    transition: all 300ms ease-in-out;
+}
+
+.navbar__btn-open {
+    top: 2rem;
+    left: 2rem;
+    background-color: #036AAD;
+}
+
+.navbar-themes-jquery-ui__btn-open {
+    top: 2rem;
+    right: 2rem;
+    background-color: #F89C15;
+}
+
+.navbar__btn-open:hover,
+.navbar-themes-jquery-ui__btn-open:hover {
+    transform: scale(1.1);
+}
+
+.btn__icon-open {
+    display: flex;
+    width: 2rem;
+    height: 0.2rem;
+    background-color: white;
+}
+
+
+/*
+    ----------------------------------------------------------------
+    -----  Botón Hamburguesa Open del menú (navbar)  ---------------
+    -----  Botón Hamburguesa Open del menú (Themes jQuery UI)  -----
+    ----------------------------------------------------------------
+*/
+
+.navbar__btn-close,
+.navbar-themes-jquery-ui__btn-close {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    padding: 0.4rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.navbar__btn-close {
+    top: 2rem;
+    left: 2rem;
+    background-color: #036AAD;
+}
+
+.navbar-themes-jquery-ui__btn-close {
+    display: none;
+    top: 2rem;
+    right: 2rem;
+    background-color: #F89C15;
+}
+
+.navbar__btn-close:hover,
+.navbar-themes-jquery-ui__btn-close:hover {
+    transition: all 300ms ease-in-out;
+    transform: scale(1.1);
+}
+
+.btn__icon-close {
+    position: absolute;
+    width: 2rem;
+    height: 0.2rem;
+    background-color: white;
+}
+
+.btn__icon-close:first-child {
+    transform: rotate(45deg);
+}
+
+.btn__icon-close:last-child {
+    transform: rotate(-45deg);
+}
