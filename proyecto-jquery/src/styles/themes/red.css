@@ -1,0 +1,53 @@
+/*
+    -----------------------------------------------------------------------------
+    ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
+    ----------  /06-spa-proyecto-html5-css3-javascript-jquery/  -----------------
+    ----------  /src/styles/themes/  --------------------------------------------
+    ----------  /red.css  -------------------------------------------------------
+    -----------------------------------------------------------------------------
+*/
+
+
+body {
+    background-image: url('/04-master-javascript-clasico-jquery-typescript-mean/proyecto-jquery/src/img/rojo.webp');
+}
+
+.header__title,
+.navbar__item a:hover,
+.post__more,
+.footer__subir,
+form input[type="submit"],
+#asideLogout {
+    background-color: #ca3413;
+}
+
+.posts__title,
+.post__title,
+.about__title,
+.contact__title,
+.reloj__title {
+    color: #ca3413;
+}
+
+.ui-accordion-header,
+.ui-datepicker .ui-datepicker-header {
+    background: #ca3413 !important;
+}
+
+.reloj {
+    color: #ca3413;
+    border: 5px dashed #ca3413;
+}
+
+.post__more:hover {
+    background-color: #f16546;
+}
+
+.footer__subir:hover {
+    background-color: #9ca39f;
+}
+
+form input[type="submit"]:hover,
+#asideLogout:hover {
+    background-color: #df7057;
+}

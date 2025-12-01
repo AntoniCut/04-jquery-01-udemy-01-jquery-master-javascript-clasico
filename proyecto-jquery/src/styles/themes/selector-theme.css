@@ -1,0 +1,80 @@
+/*
+    -----------------------------------------------------------------------------
+    ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
+    ----------  /06-spa-proyecto-html5-css3-javascript-jquery/  -----------------
+    ----------  /src/styles/themes/  --------------------------------------------
+    ----------  /selector-theme.css  --------------------------------------------
+    -----------------------------------------------------------------------------
+*/
+
+
+.selector__theme {
+    width: 5rem;
+    height: 10rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+.theme__container {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#toGreen,
+#toRed,
+#toBlue {
+    width: 3rem;
+    height: 2.5rem;
+    border: 1px solid white;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+#toGreen {
+    background-color: #235e3d;
+}
+
+#toRed {
+    background-color: #ca3413;
+}
+
+#toBlue {
+    background-color: #1f87c4;
+}
+
+#toGreen:hover,
+#toRed:hover,
+#toBlue:hover {
+    transform: scale(1.1);
+}
+
+
+/*  -----  Responsive  -----  */
+
+@media (max-width: 1400px) {
+
+    .selector__theme {
+        width: 13rem;
+        height: 4rem;
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .theme__container {
+        width: 100%;
+        height: 4rem;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+}

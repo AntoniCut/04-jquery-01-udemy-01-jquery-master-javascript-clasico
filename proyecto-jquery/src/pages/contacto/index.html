@@ -1,0 +1,45 @@
+<!--  
+    -----------------------------------------------------------------------------
+    ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
+    ----------  /06-spa-proyecto-html5-css3-javascript-jquery/  -----------------
+    ----------  /src/pages/contacto/  -------------------------------------------
+    ----------  /index.html  ----------------------------------------------------
+    -----------------------------------------------------------------------------
+-->
+
+
+<div class="content__contact">
+
+    <h2 class="contact__title"> <span> Contacto </span> </h2>
+
+    <!--  Cargar Formulario de Contacto  -->
+
+    <form class="contact__form" id="form_contact">
+
+        <label for="name" class="form__label"> Nombre </label>
+        <input type="text" name="name" data-validation="alphanumeric">
+
+        <label for="surname" class="form__label"> Apellido </label>
+        <input type="text" name="surname" data-validation="alphanumeric">
+
+        <label for="email" class="form__label"> Email </label>
+        <input type="email" name="email" data-validation="email">
+
+        <label for="sex" class="form__label"> Sexo </label>
+        <select data-validation="required" name="sex">
+            <option value="men"> Hombre </option>
+            <option value="woman"> Mujer </option>
+        </select>
+
+        <label class="form__label"> Fecha de Nacimiento </label>
+        <input type="text" name="date" data-validation="date" data-validation-format="dd-mm-yyyy" for="date">
+
+        <label class="form__label" for="years"> Edad </label>
+        <input type="number" name="years" data-validation="number">
+
+        <input type="submit" value="Enviar" id="enviar">
+
+    </form>
+
+
+</div>

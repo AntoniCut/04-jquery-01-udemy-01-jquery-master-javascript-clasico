@@ -1,0 +1,70 @@
+/*
+    -----------------------------------------------------------------------------
+    ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
+    ----------  /06-spa-proyecto-html5-css3-javascript-jquery/  -----------------
+    ----------  /src/styles/  ---------------------------------------------------
+    ----------  /layout-header.css  ---------------------------------------------
+    -----------------------------------------------------------------------------
+*/
+
+
+.layout__header {
+    width: 100%;
+    display: flex;
+}
+
+.header__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__title {
+    width: 100%;
+    min-height: 10rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    letter-spacing: 4px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.title__page {
+    font-size: 3rem;
+}
+
+.title__proyect {
+    font-size: 2.5rem;
+}
+
+/*
+    ----------------------------------
+    ----------  Responsive  ----------
+    ----------------------------------
+*/
+
+
+@media (max-width: 785px) {
+   
+    .title__proyect {
+        font-size: 2rem;
+    }
+
+    
+}
+
+@media (max-width: 430px) {
+   
+    .title__proyect {
+        font-size: 1.5rem;
+    }
+}

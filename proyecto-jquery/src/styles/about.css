@@ -1,0 +1,76 @@
+/*
+    -----------------------------------------------------------------------------
+    ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
+    ----------  /06-spa-proyecto-html5-css3-javascript-jquery/  -----------------
+    ----------  /src/styles/  ---------------------------------------------------
+    ----------  /about.css  -----------------------------------------------------
+    -----------------------------------------------------------------------------
+*/
+
+
+.content__about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.about__title {
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 2px #b6bdb9;
+    line-height: 1rem;
+    background: url('/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/img/lines.webp') repeat-x;
+}
+
+.about__title span {
+    padding: 1rem;
+    background-color: white;
+}
+
+.acordeon {
+    width: 100%;
+    height: 45rem;
+    margin-top: 2rem;
+    margin-bottom: 18rem;
+}
+
+.acordeon__title {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    padding-left: 4rem;
+    color: white;
+    cursor: pointer;
+}
+
+.ui-accordion .ui-accordion-header {
+    border: 2px solid yellow;
+    margin-top: 2rem;
+}
+
+/*  -----  Ocultar el ícono original de jQuery UI  ----- */
+.ui-accordion .ui-accordion-header .ui-icon {
+    display: none !important;
+}
+
+/*  -----  Triángulo personalizado con buena alineación  -----  */
+.ui-accordion .ui-accordion-header::before {
+    content: "▶";
+    font-size: 1.5rem;
+    color: yellow;
+    margin-right: 0.5em;
+    display: inline-block;
+    vertical-align: middle;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+    position: relative;
+    top: 0.05em; /* Ajuste fino vertical si es necesario */
+}
+
+/*  -----  Girar cuando está activo  -----  */
+.ui-accordion .ui-accordion-header.ui-state-active::before {
+    transform: rotate(90deg);
+}

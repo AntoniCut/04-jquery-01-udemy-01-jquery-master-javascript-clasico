@@ -1,0 +1,79 @@
+/*
+    -----------------------------------------------------------------------------
+    ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
+    ----------  /06-spa-proyecto-html5-css3-javascript-jquery/  -----------------
+    ----------  /src/styles/  ---------------------------------------------------
+    ----------  /posts.css  -----------------------------------------------------
+    -----------------------------------------------------------------------------
+*/
+
+
+.content__posts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.posts__title {
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 2px #b6bdb9;
+    line-height: 1rem;
+    background: url('/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/img/lines.webp') repeat-x;
+}
+
+.posts__title span {
+    padding: 1rem;
+    background-color: white;
+}
+
+.content__post {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.post__title {
+    font-size: 2rem;
+    /* color: #333; */
+}
+
+.post__date {
+    color: gray;
+}
+
+.post__description {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    line-height: 2.5rem;
+    text-align: justify;
+}
+
+.post__more {
+    display: flex;
+    width: 12rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    color: white;
+    font-size: 1.4rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: all 300ms ease-in-out;
+}
+
+.post__more:hover {
+    background-color:  #333;
+}
+
+.post__separator {
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}

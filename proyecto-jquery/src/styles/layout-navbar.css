@@ -1,0 +1,63 @@
+/*
+    -----------------------------------------------------------------------------
+    ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
+    ----------  /06-spa-proyecto-html5-css3-javascript-jquery/  -----------------
+    ----------  /src/styles/  ---------------------------------------------------
+    ----------  /layout-navbar.css  ---------------------------------------------
+    -----------------------------------------------------------------------------
+*/
+
+
+.layout__navbar {
+    width: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+    background-color: #333;
+    text-transform: uppercase;
+}
+
+.navbar__list {
+    line-height: 46px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar__item {
+    width: 15rem;
+    height: 46px;
+    display: flex;
+    transition: all 300ms ease-in-out;
+}
+
+.navbar__list:first-child {
+    margin-left: 6rem;
+}
+
+.navbar__item a {
+    width: 100%;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+
+/*  ----------  Responsive  ----------  */
+
+@media (max-width: 810px) {
+    
+    .navbar__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar__list:first-child {
+        margin-left: 0;
+    }
+
+    .navbar__item {
+        width: 100%;
+    }
+    
+}

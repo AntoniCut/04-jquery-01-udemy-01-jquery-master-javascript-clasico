@@ -1,0 +1,60 @@
+/*
+    -----------------------------------------------------------------------------
+    ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
+    ----------  /06-spa-proyecto-html5-css3-javascript-jquery/  -----------------
+    ----------  /src/styles/  ---------------------------------------------------
+    ----------  /contacto.css  --------------------------------------------------
+    -----------------------------------------------------------------------------
+*/
+
+
+.content__contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact__title {
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 2px #b6bdb9;
+    line-height: 1rem;
+    background: url('/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/img/lines.webp') repeat-x;
+}
+
+.contact__title span {
+    padding: 1rem;
+    background-color: white;
+}
+
+.contact__form {
+    width: 100%;
+    height: 79rem;
+    font-family: Helvetica, Arial;
+}
+
+.form__label {
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+
+}
+
+form input[type="submit"] {
+    margin-top: 2rem;
+}
+
+.form-error {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 100%;
+    font-size: 1.4rem;
+    background: red;
+    color: white;
+    padding: 1.5rem;
+}

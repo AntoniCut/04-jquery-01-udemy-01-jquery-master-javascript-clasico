@@ -1,0 +1,203 @@
+<!--  
+    -----------------------------------------------------------------------------
+    ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
+    ----------  /06--spa-proyecto-html5-css3-javascript-jquery/  ----------------
+    ----------  /index.html  ----------------------------------------------------
+    -----------------------------------------------------------------------------
+-->
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+
+    <title> Proyecto HTML 5, CSS 3, JavaScript y jQuery - del Master JavaScript Clásico </title>
+
+    <!--  ----------  styles global  ----------  -->
+
+    
+    <!--  -----  reset.css  -----  -->
+    <link rel="preload" href="/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/styles/reset.css"
+        as="style">
+
+    <link rel="stylesheet"
+        href="/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/styles/reset.css">
+    
+    
+    <!--  -----  viewtransition  -----  -->
+    <link rel="preload"
+        href="/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/styles/view-transition.css"
+        as="style">
+
+    <link rel="stylesheet"
+        href="/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/styles/view-transition.css">
+        
+    <!--  ----------  styles plugin bxSlider  ----------  -->
+    <link rel="preload"
+        href="/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/plugins/bxslider-4-4.2.17/dist/jquery.bxslider.min.css"
+        as="style">
+
+    <link rel="stylesheet"
+        href="/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/plugins/bxslider-4-4.2.17/dist/jquery.bxslider.min.css">
+
+    <!--  -----  layout  -----  -->
+    <link rel="preload"
+        href="/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/styles/layout.css" as="style">
+
+    <link rel="stylesheet"
+        href="/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/styles/layout.css">
+
+    <!--  -----  layout-header  -----  -->
+    <link rel="preload"
+        href="/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/styles/layout-header.css"
+        as="style">
+
+    <link rel="stylesheet"
+        href="/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/styles/layout-header.css">
+
+    <!--  -----  layout-navbar  -----  -->
+    <link rel="preload"
+        href="/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/styles/layout-navbar.css"
+        as="style">
+
+    <link rel="stylesheet"
+        href="/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/styles/layout-navbar.css">
+
+    <!--  -----  slider  -----  -->
+    <link rel="preload"
+        href="/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/styles/slider.css" as="style">
+
+    <link rel="stylesheet"
+        href="/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/styles/slider.css">
+
+    <!--  -----  selector-theme  -----  -->
+    <link rel="preload"
+        href="/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/styles/themes/selector-theme.css"
+        as="style">
+
+    <link rel="stylesheet"
+        href="/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/styles/themes/selector-theme.css">
+
+    <!--  -----  themes  -----  -->
+    <link rel="preload"
+        href="/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/styles/themes/theme.css"
+        as="style">
+
+    <link rel="stylesheet" id="theme"
+        href="/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/styles/themes/theme.css">
+
+    <!--  -----  layout-main  -----  -->
+    <link rel="preload"
+        href="/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/styles/layout-main.css"
+        as="style">
+
+    <link rel="stylesheet"
+        href="/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/styles/layout-main.css">
+
+    <!--  -----  layout-footer  -----  -->
+    <link rel="preload"
+        href="/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/styles/layout-footer.css"
+        as="style">
+
+    <link rel="stylesheet"
+        href="/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/styles/layout-footer.css">
+
+
+
+
+
+    <!--  ----------  Libreria momentJS  ----------  -->
+    <!-- <script type="module" src="/04-master-javascript-clasico-jquery-typescript-mean/06-spa-proyecto-html5-css3-javascript-jquery/src/libs/momentjs/moment/locale/es.js"> </script> -->
+
+    <script
+        src="/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/libs/momentjs/moment/min/moment.min.js"> </script>
+
+
+    <!--  ----------  script page inicio  ----------  -->
+    <script type="module" src="/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/main.js"> </script>
+
+
+</head>
+
+
+<body>
+
+
+    <!--  ----------  LOADER  ----------  -->
+    <div class="loader__container" id="loader">
+
+        <h1 class="header__title">
+            &lt; Proyecto jQuery /&gt;
+        </h1>
+
+        <div class="spinner">
+            <!--  *****  Spinner  *****  -->
+        </div>
+
+        <img class="loader__icon-jquery"
+            src="/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/img/jquery-icon.svg"
+            alt="jQuery Animation Loader" loading="lazy">
+
+        <h1 class="header__title">
+            &lt; Master JavaScript Clásico /&gt;
+        </h1>
+
+    </div>
+
+
+
+    <!--  ----------  LAYOUT  ----------  -->
+    <div class="layout" id="layout">
+
+
+        <!--  ----------  SELECTOR THEME  ----------  -->
+        <div class="selector__theme" id="selectorTheme"> </div>
+
+        <!--  ----------  HEADER  ----------  -->
+        <header class="layout__header" id="layoutHeader"> </header>
+
+        <!--  ----------  NAVBAR  ----------  -->
+        <nav class="layout__navbar" id="layoutNavbar"> </nav>
+
+        <!--  ----------  SLIDER  ----------  -->
+        <section class="main__slider" id="slider"> </section>
+
+
+        <!--  ----------  CONTENEDOR MAIN del contenido principal y del aside  ----------  -->
+        <main class="main__container">
+
+            <!--  ----------  MAIN  ------------  -->
+            <section class="layout__main" id="layoutMain">
+
+                <!--  
+                    ------------------------------------------------------------------
+                    ----------  AQUI SE RENDERIZA EL CONTENIDO con PLUGIN  -----------
+                    ----------  jquery.spa-with-method-load-from-jquery.js  ----------
+                    ------------------------------------------------------------------   
+                -->
+
+            </section>
+
+            <!--  -----  ASIDE  -----  -->
+            <aside class="main__aside" id="layoutAside"> </aside>
+
+        </main>
+
+
+    </div>
+
+
+    <!--  ----------  FOOTER  ----------  -->
+    <footer class="layout__footer" id="layoutFooter"> </footer>
+
+
+</body>
+
+</html>

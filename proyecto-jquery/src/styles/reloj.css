@@ -1,0 +1,45 @@
+/*
+    -----------------------------------------------------------------------------
+    ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
+    ----------  /06-spa-proyecto-html5-css3-javascript-jquery/  -----------------
+    ----------  /src/styles/  ---------------------------------------------------
+    ----------  /reloj.css  -----------------------------------------------------
+    -----------------------------------------------------------------------------
+*/
+
+
+.content__reloj {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.reloj__title {
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 2px #b6bdb9;
+    line-height: 1rem;
+    background: url('/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/img/lines.webp') repeat-x;
+}
+
+.reloj__title span {
+    padding: 1rem;
+    background-color: white;
+}
+
+.reloj {
+    margin-top: 3rem;
+    width: 30rem;
+    display: flex;
+    height: 10rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: Helvetica, Arial;
+}

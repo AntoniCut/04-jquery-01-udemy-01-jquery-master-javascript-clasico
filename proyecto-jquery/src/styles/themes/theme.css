@@ -1,0 +1,170 @@
+/*
+    -----------------------------------------------------------------------------
+    ----------  /04-master-javascript-clasico-jquery-typescript-mean/  ----------
+    ----------  /06-spa-proyecto-html5-css3-javascript-jquery/  -----------------
+    ----------  /src/styles/themes/  --------------------------------------------
+    ----------  /blue.css  ------------------------------------------------------
+    -----------------------------------------------------------------------------
+*/
+
+
+
+/* ============================================================
+   ===========  AJUSTES GENERALES PARA TRANSICIONES  ===========
+   ============================================================ */
+
+body {
+    transition: background-image .4s ease-in-out,
+                background-color .3s ease,
+                color .3s ease;
+}
+
+/* ============================================================
+   ======================   TEMA VERDE   ========================
+   ============================================================ */
+
+body.theme-green {
+    background-image: url('/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/img/hojas.webp');
+}
+
+body.theme-green .header__title,
+body.theme-green .navbar__item a:hover,
+body.theme-green .post__more,
+body.theme-green .footer__subir,
+body.theme-green form input[type="submit"],
+body.theme-green #asideLogout {
+    background-color: #235e3d;
+}
+
+body.theme-green .posts__title,
+body.theme-green .post__title,
+body.theme-green .about__title,
+body.theme-green .contact__title,
+body.theme-green .reloj__title {
+    color: #235e3d;
+}
+
+body.theme-green .ui-accordion-header,
+body.theme-green .ui-datepicker .ui-datepicker-header {
+    background: #235e3d !important;
+}
+
+body.theme-green .reloj {
+    color: #235e3d;
+    border: 5px dashed #235e3d;
+}
+
+body.theme-green .post__more:hover {
+    background-color: #61ca8f;
+}
+
+body.theme-green .footer__subir:hover {
+    background-color: #9ca39f;
+}
+
+body.theme-green form input[type="submit"]:hover,
+body.theme-green #asideLogout:hover {
+    background-color: #60b886;
+}
+
+
+
+/* ============================================================
+   ======================   TEMA ROJO   ========================
+   ============================================================ */
+
+body.theme-red {
+    background-image: url('/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/img/rojo.webp');
+}
+
+body.theme-red .header__title,
+body.theme-red .navbar__item a:hover,
+body.theme-red .post__more,
+body.theme-red .footer__subir,
+body.theme-red form input[type="submit"],
+body.theme-red #asideLogout {
+    background-color: #ca3413;
+}
+
+body.theme-red .posts__title,
+body.theme-red .post__title,
+body.theme-red .about__title,
+body.theme-red .contact__title,
+body.theme-red .reloj__title {
+    color: #ca3413;
+}
+
+body.theme-red .ui-accordion-header,
+body.theme-red .ui-datepicker .ui-datepicker-header {
+    background: #ca3413 !important;
+}
+
+body.theme-red .reloj {
+    color: #ca3413;
+    border: 5px dashed #ca3413;
+}
+
+body.theme-red .post__more:hover {
+    background-color: #f16546;
+}
+
+body.theme-red .footer__subir:hover {
+    background-color: #9ca39f;
+}
+
+body.theme-red form input[type="submit"]:hover,
+body.theme-red #asideLogout:hover {
+    background-color: #df7057;
+}
+
+
+
+/* ============================================================
+   ======================   TEMA AZUL   ========================
+   ============================================================ */
+
+body.theme-blue {
+    background-image: url('/01-udemy/01-jquery-master-javascript-clasico/proyecto-jquery/src/img/cielo.webp');
+}
+
+body.theme-blue .header__title,
+body.theme-blue .navbar__item a:hover,
+body.theme-blue .post__more,
+body.theme-blue .footer__subir,
+body.theme-blue form input[type="submit"],
+body.theme-blue #asideLogout {
+    background-color: #1f87c4;
+}
+
+body.theme-blue .posts__title,
+body.theme-blue .post__title,
+body.theme-blue .about__title,
+body.theme-blue .contact__title,
+body.theme-blue .reloj__title {
+    color: #1f87c4;
+}
+
+body.theme-blue .ui-accordion-header,
+body.theme-blue .ui-datepicker .ui-datepicker-header {
+    background: #1f87c4 !important;
+}
+
+body.theme-blue .reloj {
+    color: #1f87c4;
+    border: 5px dashed #1f87c4;
+}
+
+body.theme-blue .post__more:hover {
+    background-color: #70bfec;
+}
+
+body.theme-blue .footer__subir:hover {
+    background-color: #9ca39f;
+}
+
+body.theme-blue form input[type="submit"]:hover,
+body.theme-blue #asideLogout:hover {
+    background-color: #4896c4;
+}
+
+
