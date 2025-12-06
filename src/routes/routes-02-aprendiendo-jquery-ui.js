@@ -35,7 +35,7 @@ export const routes02AprendiendoJQueryUI = [
         headerTitle: 'Aprendiendo jQuery UI - 1. Primeros Pasos',
         styles: '/01-udemy/01-jquery-master-javascript-clasico/src/styles/02-aprendiendo-jquery-ui/01-jquery-ui-primeros-pasos.css',
         scripts: [
-            '/01-udemy/01-jquery-master-javascript-clasico/src/scripts/02-aprendiendo-jquery-ui/01-jquery-ui-primeros-pasos.js'
+            { src: '/01-udemy/01-jquery-master-javascript-clasico/src/scripts/02-aprendiendo-jquery-ui/01-jquery-ui-primeros-pasos.js' }
         ]
     },
 
@@ -54,7 +54,7 @@ export const routes02AprendiendoJQueryUI = [
         headerTitle: 'Aprendiendo jQuery UI - 2. Interacciones',
         styles: '/01-udemy/01-jquery-master-javascript-clasico/src/styles/02-aprendiendo-jquery-ui/02-jquery-ui-interacciones.css',
         scripts: [
-            '/01-udemy/01-jquery-master-javascript-clasico/src/scripts/02-aprendiendo-jquery-ui/02-jquery-ui-interacciones.js'
+            { src: '/01-udemy/01-jquery-master-javascript-clasico/src/scripts/02-aprendiendo-jquery-ui/02-jquery-ui-interacciones.js' }
         ]
     },
 
@@ -73,7 +73,7 @@ export const routes02AprendiendoJQueryUI = [
         headerTitle: 'Aprendiendo jQuery UI - 3. Animaciones y Efectos',
         styles: '/01-udemy/01-jquery-master-javascript-clasico/src/styles/02-aprendiendo-jquery-ui/03-jquery-ui-animaciones-y-efectos.css',
         scripts: [
-            '/01-udemy/01-jquery-master-javascript-clasico/src/scripts/02-aprendiendo-jquery-ui/03-jquery-ui-animaciones-y-efectos.js'
+            { src: '/01-udemy/01-jquery-master-javascript-clasico/src/scripts/02-aprendiendo-jquery-ui/03-jquery-ui-animaciones-y-efectos.js' }
         ]
     },
 
@@ -92,7 +92,7 @@ export const routes02AprendiendoJQueryUI = [
         headerTitle: 'Aprendiendo jQuery UI - 4. Plugins y Widgets',
         styles: '/01-udemy/01-jquery-master-javascript-clasico/src/styles/02-aprendiendo-jquery-ui/04-jquery-ui-plugins-y-widgets.css',
         scripts: [
-            '/01-udemy/01-jquery-master-javascript-clasico/src/scripts/02-aprendiendo-jquery-ui/04-jquery-ui-plugins-y-widgets.js'
+            { src: '/01-udemy/01-jquery-master-javascript-clasico/src/scripts/02-aprendiendo-jquery-ui/04-jquery-ui-plugins-y-widgets.js' }
         ]
     }
     

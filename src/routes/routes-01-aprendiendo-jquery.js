@@ -35,7 +35,7 @@ export const routes01AprendiendoJQuery = [
         headerTitle: 'Aprendiendo jQuery - 1. Primeros Pasos',   
         styles: '/01-udemy/01-jquery-master-javascript-clasico/src/styles/01-jquery/01-jquery-primeros-pasos.css',
         scripts: [
-            '/01-udemy/01-jquery-master-javascript-clasico/src/scripts/01-aprendiendo-jquery/01-jquery-primeros-pasos.js'
+            { src: '/01-udemy/01-jquery-master-javascript-clasico/src/scripts/01-aprendiendo-jquery/01-jquery-primeros-pasos.js' }
         ]
     },
 
@@ -54,7 +54,7 @@ export const routes01AprendiendoJQuery = [
         headerTitle: 'Aprendiendo jQuery - 2. Selectores',
         styles: '/01-udemy/01-jquery-master-javascript-clasico/src/styles/01-jquery/02-jquery-selectores.css',
         scripts: [
-            '/01-udemy/01-jquery-master-javascript-clasico/src/scripts/01-aprendiendo-jquery/02-jquery-selectores.js'
+            { src: '/01-udemy/01-jquery-master-javascript-clasico/src/scripts/01-aprendiendo-jquery/02-jquery-selectores.js' }
         ]
     },
 
@@ -74,7 +74,7 @@ export const routes01AprendiendoJQuery = [
         headerTitle: 'Aprendiendo jQuery - 3. Eventos',
         styles: '/01-udemy/01-jquery-master-javascript-clasico/src/styles/01-jquery/03-jquery-eventos.css',
         scripts: [
-            '/01-udemy/01-jquery-master-javascript-clasico/src/scripts/01-aprendiendo-jquery/03-jquery-eventos.js'
+            { src: '/01-udemy/01-jquery-master-javascript-clasico/src/scripts/01-aprendiendo-jquery/03-jquery-eventos.js' }
         ]
     },
 
@@ -87,13 +87,13 @@ export const routes01AprendiendoJQuery = [
             "#layoutHeader": '/01-udemy/01-jquery-master-javascript-clasico/src/components/layout/layout-header.html',
             "#btnNavbar": "/01-udemy/01-jquery-master-javascript-clasico/src/components/buttons/btn-navbar.html",
             "#layoutNavbar": '/01-udemy/01-jquery-master-javascript-clasico/src/components/layout/layout-navbar.html',
-            "#layoutMain": '/01-udemy/01-jquery-master-javascript-clasico/src/pages/01-aprendiend0o-jquery/04-jquery-manipulacion-dom.html',
+            "#layoutMain": '/01-udemy/01-jquery-master-javascript-clasico/src/pages/01-aprendiendo-jquery/04-jquery-manipulacion-dom.html',
             "#layoutFooter": '/01-udemy/01-jquery-master-javascript-clasico/src/components/layout/layout-footer.html',
         },
         headerTitle: 'Aprendiendo jQuery - 4. Manipulación del DOM',
         styles: '/01-udemy/01-jquery-master-javascript-clasico/src/styles/01-jquery/04-jquery-manipulacion-dom.css',
         scripts: [
-            '/01-udemy/01-jquery-master-javascript-clasico/src/scripts/01-aprendiendo-jquery/04-jquery-manipulacion-dom.js'
+            { src: '/01-udemy/01-jquery-master-javascript-clasico/src/scripts/01-aprendiendo-jquery/04-jquery-manipulacion-dom.js' }
         ]
     },
 
@@ -112,7 +112,7 @@ export const routes01AprendiendoJQuery = [
         headerTitle: 'Aprendiendo jQuery - 5. Efectos en jQuery',
         styles: '/01-udemy/01-jquery-master-javascript-clasico/src/styles/01-jquery/05-jquery-efectos.css',
         scripts: [
-            '/01-udemy/01-jquery-master-javascript-clasico/src/scripts/01-aprendiendo-jquery/05-jquery-efectos.js'
+            { src: '/01-udemy/01-jquery-master-javascript-clasico/src/scripts/01-aprendiendo-jquery/05-jquery-efectos.js' }
         ]
     },
 
@@ -131,7 +131,7 @@ export const routes01AprendiendoJQuery = [
         headerTitle: 'Aprendiendo jQuery - 6. Animaciones Personalizadas y Callback en Funciones',
         styles: '/01-udemy/01-jquery-master-javascript-clasico/src/styles/01-jquery/06-jquery-animaciones-personalizadas.css',
         scripts: [
-            '/01-udemy/01-jquery-master-javascript-clasico/src/scripts/01-aprendiendo-jquery/06-jquery-animaciones-personalizadas.js'
+            { src: '/01-udemy/01-jquery-master-javascript-clasico/src/scripts/01-aprendiendo-jquery/06-jquery-animaciones-personalizadas.js' }
         ]
     },
 
@@ -150,7 +150,7 @@ export const routes01AprendiendoJQuery = [
         headerTitle: 'Aprendiendo jQuery - 7. Peticiones Ajax',
         styles: '/01-udemy/01-jquery-master-javascript-clasico/src/styles/01-jquery/07-jquery-peticiones-ajax.css',
         scripts: [
-            '/01-udemy/01-jquery-master-javascript-clasico/src/scripts/01-aprendiendo-jquery/07-jquery-peticiones-ajax.js'
+            { src: '/01-udemy/01-jquery-master-javascript-clasico/src/scripts/01-aprendiendo-jquery/07-jquery-peticiones-ajax.js' }
         ]
     }
         

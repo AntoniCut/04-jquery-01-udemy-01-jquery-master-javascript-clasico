@@ -12,19 +12,51 @@
 //  ----------  Esto asegura que VS Code lo trate como módulo  ----------
 export { };
 
+
+
 /**
+ * -------------------------------
+ * -----  `RouteComponents`  -----
+ * -------------------------------
+ * 
+ * - Mapa de componentes HTML a cargar dinámicamente.
+ * - Cada valor puede ser string o undefined.
+ *
+ * @typedef {Record<string, string|undefined>} RouteComponents
+ * 
+ */
+
+
+/**
+ * --------------------------
+ * -----  `RouteScript` -----
+ * --------------------------
+ * 
+ * - Representa un script que debe cargarse dinámicamente.
+ * 
+ * @typedef {Object} RouteScript
+ * @property {string} src - Ruta absoluta o relativa del archivo JS.
+ * 
+ */
+
+
+/**
+ * ---------------------
+ * -----  `Route`  -----
+ * ---------------------
+ * 
  *  - Objeto que define la configuración de una ruta en la aplicación SPA.
  *
  * @typedef {Object} Route
  *
  * @property {string} id  - Identificador único de la ruta (usado en los enlaces `data-id`).
  *
- * @property {string} path
- *      Ruta relativa del navegador (usada en `history.pushState`).
+ * @property {string} path - Ruta relativa del navegador (usada en `history.pushState`).
  *
- * @property {Object.<string,string>} components
+ * @property {RouteComponents} components
+ * 
  *      Objeto dinámico donde la clave es el selector CSS
- *      y el valor es la ruta al archivo HTML que se cargará en ese contenedor.
+ *       y el valor es la ruta al archivo HTML que se cargará en ese contenedor.
  *
  *      Ejemplo:
  *      {
@@ -33,18 +65,14 @@ export { };
  *          "#widgetPromo": "/src/components/widgets/promo.html"
  *      }
  *
- * @property {string} favicon
- *      Ruta del favicon que se mostrará en la pestaña del navegador.
+ * @property {string} favicon - Ruta del favicon que se mostrará en la pestaña del navegador.
  *
- * @property {string} pageTitle
- *      Título que se asignará al documento (`document.title`).
+ * @property {string} pageTitle - Título que se asignará al documento (`document.title`).
  *
- * @property {string} headerTitle
- *      Texto mostrado en el encabezado principal de la vista.
+ * @property {string} headerTitle - Texto mostrado en el encabezado principal de la vista.
  *
- * @property {string|null} [styles]
- *      Hoja de estilos asociada a la vista (opcional).
+ * @property {string|null} [styles] - Hoja de estilos asociada a la vista (opcional).
  *
- * @property {string[]|null} [scripts]
- *      Lista de archivos JavaScript adicionales que deben cargarse (opcional).
+ * @property {RouteScript[]|null} [scripts] - Lista de archivos JavaScript adicionales que deben cargarse (opcional).
+ * 
  */
