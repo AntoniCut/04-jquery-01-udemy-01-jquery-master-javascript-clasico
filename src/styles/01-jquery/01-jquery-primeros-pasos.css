@@ -1,0 +1,51 @@
+/*
+    -------------------------------------------------------------
+    ----------  /jquery.antonydev.tech/  ------------------------
+    ----------  /01-udemy/  -------------------------------------
+    ----------  /01-jquery-master-javascript-clasico/  ----------
+    ----------  /src/styles/01-aprendiendo-jquery/  -------------
+    ----------  /01-jquery-primeros-pasos.css  ------------------
+    -------------------------------------------------------------  
+*/
+
+
+
+.jquery-primeros-pasos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    background-color: #F8F9FE;
+}
+
+.text-jquery {
+    width: 100%;
+    margin: 5rem;
+    padding: 2rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #0769ad;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    background-color: #facd8a;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.primeros-pasos__title {
+    font-size: 1.8rem;
+    text-align: left;
+    color: #facd8a;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.primeros-pasos__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.6rem;
+    color: var(--color-primary)
+}

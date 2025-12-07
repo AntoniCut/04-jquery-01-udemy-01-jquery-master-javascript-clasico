@@ -1,0 +1,165 @@
+<!--  
+    -------------------------------------------------------------
+    ----------  /jquery.antonydev.tech/  ------------------------
+    ----------  /01-udemy/  -------------------------------------
+    ----------  /01-jquery-master-javascript-clasico/  ----------
+    ----------  /src/pages/01-aprendiendo-jquery/  --------------
+    ----------  /07-jquery-peticiones-ajax.html  ----------------
+    -------------------------------------------------------------
+-->
+
+
+<!--  ----------  MAIN  ----------  -->
+<div class="main__container">
+
+
+    <!--  
+        -------------------------------------------
+        -----  Descripción de la Página  ----------
+        -------------------------------------------  
+    -->
+    <h2 class="main__title">
+        Aprendiendo jQuery - 7. Peticiones AJAX
+    </h2>
+
+    <!--  --------------------------------------  -->
+    <!--  ----------  1. Método LOAD  ----------  -->
+    <!--  --------------------------------------  -->
+    <section class="main__section">
+
+        <h3 class="section__title"> 1. Método LOAD </h3>
+
+        <button id="btnLoad"> Load </button>
+
+        <article id="datosLoad">
+            <!--  *****  Aqui se Renderiza la Peticion AJAX con el método LOAD  *****  -->
+        </article>
+
+    </section>
+
+
+    <!--  --------------------------------------  -->
+    <!--  ----------  2. Método GET  ----------  -->
+    <!--  --------------------------------------  -->
+    <section class="main__section main__section--get">
+
+        <h3 class="section__title"> 2. Método GET </h3>
+
+        <button id="btnGet"> Get </button>
+
+        <article id="datosGet">
+            <!--  *****  Aqui se Renderiza la Peticion AJAX con el método GET  *****  -->
+        </article>
+
+    </section>
+
+
+    <!--  --------------------------------------  -->
+    <!--  ----------  3. Método POST  ----------  -->
+    <!--  --------------------------------------  -->
+    <section class="main__section main__section--post">
+
+        <h3 class="section__title"> 3. Método POST </h3>
+
+        <article class="section__post">
+
+            <form action="https://jsonplaceholder.typicode.com/users" method="POST" id="formularioPost">
+
+                <div class="form__input">
+                    ID:
+                    <input type="number" name="idPost">
+                </div>
+
+                <div class="form__input">
+                    Name:
+                    <input type="text" name="namePost">
+                </div>
+
+                <div class="form__input">
+                    Username:
+                    <input type="text" name="usernamePost">
+                </div>
+
+                <div class="form__input">
+                    Email:
+                    <input type="email" name="emailPost">
+                </div>
+
+                <div class="form__input">
+                    Phone:
+                    <input type="tel" name="phonePost">
+                </div>
+
+                <div class="form__input">
+                    Website:
+                    <input type="url" name="websitePost" placeholder="https://">
+                </div>
+
+                <input type="submit" name="Registrar">
+
+            </form>
+
+
+            <article id="datosPost">
+                <!--  *****  Aqui se Renderiza la Peticion AJAX con el método POST  *****  -->
+            </article>
+
+        </article>
+
+    </section>
+
+
+    <!--  --------------------------------------  -->
+    <!--  ----------  4. Método AJAX  ----------  -->
+    <!--  --------------------------------------  -->
+    <section class="main__section main__section--ajax">
+
+        <h3 class="section__title"> 4. Método AJAX </h3>
+
+        <article class="section__ajax">
+
+            <form action="https://jsonplaceholder.typicode.com/users" method="POST" id="formularioAjax">
+
+                <div class="form__input">
+                    ID:
+                    <input type="number" name="idAjax">
+                </div>
+
+                <div class="form__input">
+                    Name:
+                    <input type="text" name="nameAjax">
+                </div>
+
+                <div class="form__input">
+                    Username:
+                    <input type="text" name="usernameAjax">
+                </div>
+
+                <div class="form__input">
+                    Email:
+                    <input type="email" name="emailAjax">
+                </div>
+
+                <div class="form__input">
+                    Phone:
+                    <input type="tel" name="phoneAjax">
+                </div>
+
+                <div class="form__input">
+                    Website:
+                    <input type="url" name="websiteAjax" placeholder="https://">
+                </div>
+
+                <input type="submit" name="Registrar">
+
+            </form>
+
+            <article id="datosAjax">
+                <!--  *****  Aqui se Renderiza la Peticion AJAX con el método POST  *****  -->
+            </article>
+
+        </article>
+
+    </section>
+
+</div>

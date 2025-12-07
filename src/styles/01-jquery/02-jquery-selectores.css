@@ -1,0 +1,185 @@
+/*
+    -------------------------------------------------------------
+    ----------  /jquery.antonydev.tech/  ------------------------
+    ----------  /01-udemy/  -------------------------------------
+    ----------  /01-jquery-master-javascript-clasico/  ----------
+    ----------  /src/styles/01-aprendiendo-jquery/  -------------
+    ----------  /02-jquery-selectores.css  ----------------------
+    -------------------------------------------------------------  
+*/
+
+
+
+/*
+    -----------------------------------------
+    ----------  1. Selector de ID  ----------
+    -----------------------------------------
+*/
+
+.selector-de-id__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: left;
+}
+
+.selector-de-id__container p {
+    padding-left: 3rem;
+}
+
+
+/*
+    ----------------------------------------------
+    ----------  2. Selectores de Clase  ----------
+    ----------------------------------------------
+*/
+
+.selectores-de-clase__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: left;
+}
+
+.selectores-de-clase__container p {
+    padding-left: 3rem;
+}
+
+.zebra2,
+.zebra3 {
+    cursor: pointer;
+}
+
+.zebra-class {
+    border: 5px dashed white !important;
+}
+
+
+/*
+    -------------------------------------------------
+    ----------  3. Selectores de Etiqueta  ----------
+    -------------------------------------------------
+*/
+
+.selectores-de-etiqueta__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: left;
+}
+
+.selectores-de-etiqueta__container span {
+    padding-left: 3rem;
+}
+
+.zebra-border {
+    border: 5px dashed blue !important;
+}
+
+.grande {
+    font-size: 3rem !important;
+}
+
+
+/*
+    -------------------------------------------------
+    ----------  4. Selectores de Atributo  ----------
+    -------------------------------------------------
+*/
+
+.selectores-de-atributo__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: left;
+}
+
+.selectores-de-atributo__container p {
+    padding-left: 3rem;
+}
+
+.selectores-de-atributo__container li {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    background-color: cornflowerblue;
+}
+
+.btn__container {
+    margin-top: 1rem;
+}
+
+
+/*
+    ----------------------------------------
+    ----------  5. Find y Parent  ----------
+    ----------------------------------------
+*/
+
+.find-y-parent__top {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.find-y-parent__bottom {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.find-y-parent__container {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: left;
+}
+
+.find-y-parent__container p,
+.find-y-parent__container span {
+    padding-left: 3rem;
+}
+
+.find-y-parent__container li {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    background-color: cornflowerblue;
+}
+
+.border-superior {
+    border-top: 3px solid black;
+    margin-top: 1rem;
+}
+
+.resaltado {
+    border: 5px solid green;
+}
+
+#caja {
+    height: 40rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    font-size: 2rem;
+    background-color: antiquewhite;
+}
+
+.title-enlace {
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+    background-color: blueviolet;
+    padding: 1rem;
+    border-radius: 5px;
+}

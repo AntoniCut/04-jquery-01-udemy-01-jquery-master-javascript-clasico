@@ -1,0 +1,149 @@
+<!--  
+    -------------------------------------------------------------
+    ----------  /jquery.antonydev.tech/  ------------------------
+    ----------  /01-udemy/  -------------------------------------
+    ----------  /01-jquery-master-javascript-clasico/  ----------
+    ----------  /04-jquery-ui-plugins-y-widgets.html  -----------
+    -------------------------------------------------------------  
+-->
+
+
+<!--  ----------  MAIN  ----------  -->
+<div class="main__container">
+
+
+    <!--  
+        -------------------------------------------
+        -----  Descripción de la Página  ----------
+        -------------------------------------------  
+    -->
+    <h2 class="main__title">
+        Aprendiendo jQuery UI - 4. Plugins y Widgets
+    </h2>
+    
+    
+    <!--  
+        -----------------------------------
+        ----------  1. Tooltips  ----------  
+        -----------------------------------  
+    -->
+    <section class="main__section">
+        
+        <h3 class="section__title" title="Título de la Sección Tooltips"> 
+            1. Tooltips 
+        </h3>
+
+        <div class="btn__container">
+            <a class="enlace" href="#" title="acceder a la seccion de mis datos de esta web"> Mis datos </a>
+            <a class="enlace" href="#" title="Logueate en esta web"> Identificarse </a>
+            <a class="enlace" href="#" title="Ver todos mis amigos"> Amigos </a>
+        </div>
+
+
+    </section>
+
+
+    <!--  
+        ---------------------------------------------  
+        ----------  2. Cuadros de Dialogo  ----------  
+        ---------------------------------------------  
+    -->
+    <section class="main__section">
+
+        <h3 class="section__title" title="Título de la Sección Cuadros de Dialogo"> 
+            2. Cuadros de Dialogo 
+        </h3>
+
+        <button id="lanzarPopup"> Lanzame </button>
+
+        <div id="popup" title="¿Estas seguro?">
+            
+            <p class="text-popup">
+                Si continuas en el curso 
+                <br>
+                aprenderas mucho
+                <br>
+                jQuery y JavaScript
+                <br>
+                inevitablemente
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!--  
+        -------------------------------------
+        ----------  3. Calendario  ----------
+        -------------------------------------  
+    -->
+    <section class="main__section main__section--calendario">
+
+        <h3 class="section__title" title="Título de la Sección Calendario"> 3. Calendario </h3>
+
+        <input type="text" id="calendario">
+
+    </section>
+
+
+    <!--  
+        ------------------------------- 
+        ----------  4. Tabs  ----------
+        -------------------------------
+    -->
+    <section class="main__section">
+
+        <h3 class="section__title" title="Título de la Sección Tabs"> 4. Tabs </h3>
+
+        <div id="pestanas">
+
+            <ul>
+                <li> <a href="#tabs-1"> Tooltips </a> </li>
+                <li> <a href="#tabs-2"> Dialogos </a> </li>
+                <li> <a href="#tabs-3"> Calendarios </a> </li>
+                <li> <a href="#tabs-4"> Pestañas </a> </li>
+            </ul>
+
+            <div id="tabs-1">
+                <h3> Tooltips </h3>
+                <br> <hr> <br>
+                <p>
+                    Los tooltips son cuadros de texto que aparecen al situar el cursor sobre un elemento.
+                    Generalmente se usan para dar información adicional sobre un elemento.
+                </p>
+            </div>
+
+            <div id="tabs-2">
+                <h3> Dialogos </h3>
+                <br> <hr> <br>
+                <p>
+                    Los cuadros de dialogo son ventanas emergentes que se usan para mostrar información
+                    o pedir confirmación al usuario.
+                </p>
+            </div>
+
+            <div id="tabs-3">
+                <h3> Calendarios </h3>
+                <br> <hr> <br>
+                <p>
+                    Los calendarios permiten seleccionar fechas de manera visual y sencilla.
+                    Son útiles para formularios y aplicaciones que requieren entrada de fechas.
+                </p>
+            </div>
+
+            <div id="tabs-4">
+                <h3> Pestañas </h3>
+                <br> <hr> <br>
+                <p>
+                    Las pestañas permiten organizar contenido en secciones que se pueden mostrar u ocultar.
+                    Facilitan la navegación y mejoran la experiencia del usuario.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+</div>

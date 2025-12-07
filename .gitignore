@@ -1,0 +1,14 @@
+# Proyectos y cursos
+proyecto-jquery/
+
+# Node y dependencias
+node_modules/
+pnpm-lock.yaml
+
+# Carpeta de distribución / compilados
+dist/
+
+# Sistema y editor (opcional, recomendable)
+.DS_Store
+Thumbs.db
+.vscode/

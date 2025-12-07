@@ -1,0 +1,207 @@
+<!--  
+    -------------------------------------------------------------
+    ----------  /jquery.antonydev.tech/  ------------------------
+    ----------  /01-udemy/  -------------------------------------
+    ----------  /01-jquery-master-javascript-clasico/  ----------
+    ----------  /src/pages/01-aprendiendo-jquery/  --------------
+    ----------  /02-jquery-selectores.html  ---------------------
+    -------------------------------------------------------------  
+-->
+
+
+<!--  ----------  MAIN  ----------  -->
+<div class="main__container">
+
+
+    <!--  
+        --------------------------------------
+        -----  Descripción de la Página  -----
+        --------------------------------------  
+    -->
+    <h2 class="main__title">
+        Aprendiendo jQuery - 2. Selectores
+    </h2>
+
+
+    <!--  
+        ------------------------------------
+        -----  Sección Selector de ID  -----
+        ------------------------------------
+    -->
+    <section class="main__section">
+
+        <h3 class="section__title"> 1. Selector de ID </h3>
+
+        <article class="selector-de-id__container">
+
+            <p id="rojo1"> Ejercicios de jQuery </p>
+            <p id="amarillo1"> Practicando con selectores ID </p>
+            <p id="verde1"> Quiero ser un parrafo verde </p>
+
+        </article>
+                
+    </section>
+
+
+    <!--  
+        ---------------------------------------
+        -----  Sección Selector de CLASE  -----
+        ---------------------------------------
+    -->
+    <section class="main__section">
+
+        <h3 class="section__title"> 2. Selector de CLASE </h3>
+
+        <article class="selectores-de-clase__container">
+
+            <p class="rojo2"> Ejercicios de jQuery </p>
+            <p class="amarillo2"> Practicando con selectores de clase </p>
+            <p class="verde2"> Quiero ser un parrafo verde </p>
+            <p class="zebra2"> Soy un parrafo blanco </p>
+
+        </article>
+                
+    </section>
+   
+
+    <!--  
+        ------------------------------------------
+        -----  Sección Selector de ETIQUETA  -----
+        ------------------------------------------
+    -->
+    <section class="main__section">
+
+        <h3 class="section__title"> 3. Selector de ETIQUETA </h3>
+
+        <article class="selectores-de-etiqueta__container">
+
+            <span class="rojo3"> Span Rojo - con clase zebra-border </span>
+            <span class="amarillo3"> Span Amarillo - con clase grande </span>
+            <span class="verde3"> Span Verde - con clase zebra-border </span>
+            <span class="zebra3"> Span Blanco - con clase grande </span>
+
+        </article>
+                
+    </section>
+
+
+    <!--  
+        ------------------------------------------
+        -----  Sección Selector de ATRIBUTO  -----
+        ------------------------------------------
+    -->
+    <section class="main__section">
+
+        <h3 class="section__title"> 4. Selector de ATRIBUTO </h3>
+
+        <div class="btn__container">
+                <button id="btnAtributos"> Cambiar Atributos </button>
+            </div>
+
+        <article class="selectores-de-atributo__container">
+
+            <ul>
+                
+                <li> 
+                    <a href="https://www.google.com" target="_blank" title="Google"> 
+                        Ir a Google 
+                    </a> 
+                </li>
+            
+                <li> 
+                    <a href="https://www.facebook.com" target="_blank" title="Facebook"> 
+                        Ir a Facebook 
+                    </a> 
+                </li>
+                
+                <li> 
+                    <a href="#"> 
+                        enlace 3 
+                    </a> 
+                </li>
+                
+                <li> 
+                    <a href="#"> 
+                        enlace 4 
+                    </a> 
+                </li>
+                
+                <li> 
+                    <a href="#"> 
+                        enlace 5 
+                    </a> 
+                </li>
+
+            </ul>
+
+        </article>
+                
+    </section>
+
+
+
+    <!--  
+        -----------------------------------
+        -----  Sección FIND y PARENT  -----
+        -----------------------------------
+    -->
+    <section class="main__section">
+
+        <h3 class="section__title"> 5. Find y Parent </h3>
+
+        <div class="find-y-parent__top">
+
+            <article class="find-y-parent__container">
+
+                <p class="rojo5"> Párrafo Rojo </p>
+                <p class="amarillo5"> Párrafo Amarillo </p>
+                <p class="verde5"> Parrafo Verde </p>
+                <p class="azul5"> Parrafo Azul </p>
+
+            </article>
+
+            <article class="find-y-parent__container">
+                
+                <ul>
+                    <li> <a href="https://www.google.com" target="_blank" title="Google"> Ir a Google </a> </li>
+                    <li> <a href="https://www.facebook.com" target="_blank" title="Facebook"> Ir a Facebook </a> </li>
+                    <li> <a href="#"> enlace 3 </a> </li>
+                    <li> <a href="#"> enlace 4 </a> </li>
+                    <li> <a href="#"> enlace 5 </a> </li>
+                </ul>
+                
+            </article>
+                
+            <article class="find-y-parent__container">
+
+                <div id="caja">
+
+                    <p> Hola, Soy una caja </p>
+                    
+                    <ul>
+                        <li> Elemento 1 </li>
+                        <li id="elemento2" class="resaltado"> Elemento 2 - Resaltado </li>
+                    </ul>
+
+                    <span class="resaltado"> Soy un span </span>
+
+                </div>
+
+            </article>
+              
+        </div>
+
+
+        <div class="find-y-parent__bottom">
+
+            <div class="btn__container">
+                <button id="btnMarginSup"> Margen Superior Párrafos y Enlaces </button>
+                <button id="btnChangeBackground"> Cambiar background elemento 2 resaltado </button>
+                <button id="btnGetTitle"> Obtener Título enlace Google </button>
+            </div>
+
+        </div>
+                
+    </section>
+
+</div>

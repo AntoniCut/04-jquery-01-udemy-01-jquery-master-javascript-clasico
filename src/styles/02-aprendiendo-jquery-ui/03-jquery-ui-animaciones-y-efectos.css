@@ -1,0 +1,83 @@
+/*
+    ---------------------------------------------------------------
+    ----------  /jquery.antonydev.tech/  --------------------------
+    ----------  /01-udemy/  ---------------------------------------
+    ----------  /01-jquery-master-javascript-clasico/  ------------
+    ----------  /src/styles/02-aprendiendo-jquery-ui/  ------------
+    ----------  /03-jquery-ui-animaciones-y-efectos.css  ----------
+    ---------------------------------------------------------------  
+*/
+
+
+
+/*
+    ------------------------------------------------
+    ----------  1. Animaciones y Efectos  ----------
+    ------------------------------------------------
+*/
+
+.main__section {
+    position: relative;
+    width: 100%;
+    height: 100rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.section-selects-btn__container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+
+.main__section select {
+    width: 100%;
+    height: 3rem;
+    outline: none;
+    border: none;
+}
+
+@media (min-width: 768px) {
+
+    .main__section select {
+        width: 20rem;
+    }
+}
+
+.caja-efectos {
+    position: absolute;
+    top: 20rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rem;
+    color: #fff;
+    background-color: #F89C15;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #b97d22;
+}
+
+@media (min-width: 768px) {
+
+    .caja-efectos {
+        width: 25rem;
+        height: 25rem;
+        font-size: 2.4rem;
+    }
+
+}
