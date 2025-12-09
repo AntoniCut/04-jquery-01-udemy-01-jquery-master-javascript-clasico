@@ -62,8 +62,8 @@
 
 /*
     ----------------------------------------------------------------
-    -----  Botón Hamburguesa Open del menú (navbar)  ---------------
-    -----  Botón Hamburguesa Open del menú (Themes jQuery UI)  -----
+    -----  Botón Hamburguesa Close del menú (navbar)  ---------------
+    -----  Botón Hamburguesa Close del menú (Themes jQuery UI)  -----
     ----------------------------------------------------------------
 */
 
@@ -89,7 +89,6 @@
 }
 
 .navbar-themes-jquery-ui__btn-close {
-    display: none;
     top: 2rem;
     right: 2rem;
     background-color: #F89C15;
@@ -102,6 +101,7 @@
 }
 
 .btn__icon-close {
+    display: flex;    
     position: absolute;
     width: 2rem;
     height: 0.2rem;

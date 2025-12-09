@@ -25,6 +25,7 @@ const EXCLUDES = [
     "!src/types/**",
     "!gulpfile.js",
     "!jsconfig.json",
+    "!proyecto-jquery/**",
 ];
 
 

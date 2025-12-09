@@ -29,6 +29,7 @@ export const routes00Home = [
             "#layoutHeader": '/01-udemy/01-jquery-master-javascript-clasico/src/components/layout/layout-header.html',
             "#btnNavbar": "/01-udemy/01-jquery-master-javascript-clasico/src/components/buttons/btn-navbar.html",
             "#layoutNavbar": '/01-udemy/01-jquery-master-javascript-clasico/src/components/layout/layout-navbar.html',
+            "#layoutNavbarThemesUI": undefined,
             "#layoutMain": '/01-udemy/01-jquery-master-javascript-clasico/src/pages/00-home.html',
             "#layoutFooter": '/01-udemy/01-jquery-master-javascript-clasico/src/components/layout/layout-footer.html',
         },

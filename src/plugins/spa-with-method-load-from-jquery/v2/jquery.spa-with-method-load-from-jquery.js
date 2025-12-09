@@ -69,7 +69,7 @@ export const spaWithMethodLoadFromJQueryPlugins = () => {
                 -----  Configuración por defecto (solo lo estrictamente necesario)  -----
                 -------------------------------------------------------------------------
             */
-            
+
 
             /**
              * ------------------------
@@ -251,6 +251,9 @@ export const spaWithMethodLoadFromJQueryPlugins = () => {
 
                             //  -----  Inicializar acciones del navbar  -----
                             actionsNavbar();
+
+                            //  -----  Cambio de themes jQuery UI  -----
+                            changeThemesJQueryUI();
 
                             //  -----  Aplicar metadatos de la ruta (título, favicon, css, scripts, URL)  -----
                             applyRouteMeta(route);
@@ -577,44 +580,160 @@ export const spaWithMethodLoadFromJQueryPlugins = () => {
             const actionsNavbar = () => {
 
 
-                //  -----  Ocultar navbar y botón cerrar al inicio  -----
-                $('.navbar__container').hide();
-                $('.navbar__btn-close').hide();
+                /**  
+                 * MENÚ PRINCIPAL  
+                 */
+                const menuMain = {
+                    container: $('.navbar__container'),
+                    btnOpen: $('.navbar__btn-open'),
+                    btnClose: $('.navbar__btn-close')
+                };
+
+                /**  
+                 * MENÚ THEMES JQUERY UI  
+                 */
+                const menuThemes = {
+                    container: $('#linksThemesContainer'),
+                    btnOpen: $('.navbar-themes-jquery-ui__btn-open'),
+                    btnClose: $('.navbar-themes-jquery-ui__btn-close')
+                };
+
+                // Ocultar ambos menús al iniciar
+                menuMain.container.hide();
+                menuMain.btnClose.hide();
+
+                menuThemes.container.hide();
+                menuThemes.btnClose.hide();
 
 
-                //  -----  Delegación de eventos  -----
-                $(document)
+                // ---------- FUNCIONES ----------
+                function openMenu(menu) {
+                    menu.container.stop(true, true).slideDown(250);
+                    menu.btnOpen.hide();
+                    menu.btnClose.show();
+                }
 
-                    //  -----  eliminamos cualquier binding anterior  -----
-                    .off('.navbar')
+                function closeMenu(menu) {
+                    menu.container.stop(true, true).slideUp(250);
+                    menu.btnOpen.show();
+                    menu.btnClose.hide();
+                }
 
-                    //  -----  Evento click en botón abrir  -----
-                    .on('click.navbar', '.navbar__btn-open', function (e) {
-                        e.stopPropagation();
-                        $('.navbar__container').stop(true, true).slideDown(1000);
-                        $(this).hide();
-                        $('.navbar__btn-close').show();
-                    })
+                function clickInside(element, target) {
+                    return $(target).closest(element).length > 0;
+                }
 
-                    //  -----  Evento click en botón cerrar  -----
-                    .on('click.navbar', '.navbar__btn-close', function (e) {
-                        e.stopPropagation();
-                        $('.navbar__container').stop(true, true).slideUp(1000);
-                        $(this).hide();
-                        $('.navbar__btn-open').show();
-                    })
+                // ---------- EVENTOS ----------
 
-                    //  -----  Evento click fuera del navbar para cerrarlo  -----
-                    .on('click.navbar', function () {
-                        $('.navbar__container').stop(true, true).slideUp(1000);
-                        $('.navbar__btn-close').hide();
-                        $('.navbar__btn-open').show();
-                    });
+                // Abrir menú principal
+                $(document).on("click", ".navbar__btn-open", function (e) {
+                    e.stopPropagation();
+                    openMenu(menuMain);
+                    closeMenu(menuThemes); // cierro el otro
+                });
+
+                // Cerrar menú principal
+                $(document).on("click", ".navbar__btn-close", function (e) {
+                    e.stopPropagation();
+                    closeMenu(menuMain);
+                });
+
+                // Abrir menú themes UI
+                $(document).on("click", ".navbar-themes-jquery-ui__btn-open", function (e) {
+                    e.stopPropagation();
+                    openMenu(menuThemes);
+                    closeMenu(menuMain); // cierro el otro
+                });
+
+                // Cerrar menú themes UI
+                $(document).on("click", ".navbar-themes-jquery-ui__btn-close", function (e) {
+                    e.stopPropagation();
+                    closeMenu(menuThemes);
+                });
+
+                // -------- CLIC FUERA DE LOS MENÚS --------
+                $(document).on("click", function (e) {
+
+                    const clickMain = clickInside(menuMain.container, e.target) ||
+                        clickInside(menuMain.btnOpen, e.target);
+
+                    const clickThemes = clickInside(menuThemes.container, e.target) ||
+                        clickInside(menuThemes.btnOpen, e.target);
+
+                    if (!clickMain) closeMenu(menuMain);
+                    if (!clickThemes) closeMenu(menuThemes);
+                });
+
             };
 
 
+            /**
+             * --------------------------------------
+             * -----  `changeThemesJQueryUI()`  -----
+             * --------------------------------------
+             * 
+             * - Cambia las themes de jQuery UI dinámicamente.
+             * 
+             */
+
+            const changeThemesJQueryUI = () => {
+
+                
+                /**
+                 * - `id` del elemento `link` de la hoja de estilos de jquery UI
+                 * @type {JQuery<HTMLLinkElement>} 
+                 */
+                const $theme = $('#theme');
+
+                /**
+                 * - contenedor de los links de themes
+                 * @type {JQuery<HTMLDivElement>}
+                 */
+                const $linksThemesContainer = $('#linksThemesContainer');
 
 
+                /**
+                 * - Path de las themes de jQuery UI
+                 * @type {string}
+                 */
+                const path = '/01-udemy/01-jquery-master-javascript-clasico/src/libs/jquery-ui/themes';
+
+
+                //  -----  añadimos widget tooltip al layoutNavbarThemesUI  -----
+                $linksThemesContainer.tooltip();
+
+
+                function disabledActive() {
+
+                    $linksThemesContainer
+                        .find("a")
+                        .removeClass('active');
+                }
+
+
+                $linksThemesContainer.on("click", "a", function (e) {
+
+                    e.preventDefault();
+
+                    const themeName = $(this).data("theme");
+                    if (!themeName) return;
+
+                    $theme.attr("href", `${path}/${themeName}/jquery-ui.min.css`);
+
+                    console.log('\n');
+                    console.warn(`Theme changed to: ${themeName}`);
+                    console.log('\n');
+
+                    disabledActive();
+                    $(this).addClass("active");
+
+                    e.stopPropagation();
+
+                });
+
+            }
+
+            
 
             /**
              * --------------------------------------
@@ -682,19 +801,19 @@ export const spaWithMethodLoadFromJQueryPlugins = () => {
                 //  -----  Borrar estilos anteriores dinámicos  -----
                 $('link[data-page-style="true"]').remove();
 
-                if (!styles) 
+                if (!styles)
                     return;
 
                 //  -----  Asegurar array  -----
                 const list = Array.isArray(styles) ? styles : [styles];
 
                 list.forEach(style => {
-                    
-                    if (!style || typeof style.href !== 'string') 
+
+                    if (!style || typeof style.href !== 'string')
                         return;
-                    
+
                     //  -----  Cargar la hoja de estilos  -----
-                    loadStylesheet(style.href);   
+                    loadStylesheet(style.href);
 
                 });
 
@@ -716,7 +835,7 @@ export const spaWithMethodLoadFromJQueryPlugins = () => {
 
             const loadStylesheet = (cssFile) => {
 
-                if (typeof cssFile !== "string") 
+                if (typeof cssFile !== "string")
                     return;
 
                 //  -----  Quitar solamente enlaces existentes con la misma ruta  -----
@@ -726,13 +845,13 @@ export const spaWithMethodLoadFromJQueryPlugins = () => {
                 const versionedHref = `${cssFile}?t=${Date.now()}`;
 
                 $('<link>')
-                    
+
                     .attr({
                         rel: 'stylesheet',
                         href: versionedHref,
                         'data-page-style': 'true'
                     })
-                    
+
                     .appendTo('head');
 
             };
@@ -838,7 +957,7 @@ export const spaWithMethodLoadFromJQueryPlugins = () => {
                 });
 
             };
-          
+
 
 
             /**

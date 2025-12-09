@@ -176,7 +176,7 @@ loadJQueryByCdnOLocal(cdnJQuery, localJQuery)
                         spaUdemyJQueryMasterJavaScriptClasico();
 
                         //  ----- Limpia la consola después de 10 segundos  -----
-                        setTimeout(() => console.clear(), 10000);
+                        //setTimeout(() => console.clear(), 10000);
 
                     });
 

@@ -23,38 +23,52 @@
 
     <!--  ----------  Themes jQuery UI  ----------  -->
     <link rel="preload" href="/01-udemy/01-jquery-master-javascript-clasico/src/libs/jquery-ui/themes/base/jquery-ui.min.css" as="style">
-    <link rel="stylesheet" href="/01-udemy/01-jquery-master-javascript-clasico/src/libs/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="/01-udemy/01-jquery-master-javascript-clasico/src/libs/jquery-ui/themes/base/jquery-ui.min.css"
+        id="theme">
 
 
-    <!--  ----------  Estilos  ----------  -->
+    <!--  ----------  normalize  ----------  -->
     <link rel="preload" href="/01-udemy/01-jquery-master-javascript-clasico/src/styles/normalize.css" as="style">
     <link rel="stylesheet" href="/01-udemy/01-jquery-master-javascript-clasico/src/styles/normalize.css">
 
+
+    <!--  ----------  reset  ----------  -->
     <link rel="preload" href="/01-udemy/01-jquery-master-javascript-clasico/src/styles/reset.css" as="style">
     <link rel="stylesheet" href="/01-udemy/01-jquery-master-javascript-clasico/src/styles/reset.css">
 
+    <!--  ----------  view-transition  ----------  -->
     <link rel="preload" href="/01-udemy/01-jquery-master-javascript-clasico/src/styles/view-transition.css" as="style">
     <link rel="stylesheet" href="/01-udemy/01-jquery-master-javascript-clasico/src/styles/view-transition.css">
 
+    <!--  ----------  layout  ----------  -->
     <link rel="preload" href="/01-udemy/01-jquery-master-javascript-clasico/src/styles/components/layout/layout.css" as="style">
     <link rel="stylesheet" href="/01-udemy/01-jquery-master-javascript-clasico/src/styles/components/layout/layout.css">
 
+    <!--  ----------  layout-header  ----------  -->
     <link rel="preload" href="/01-udemy/01-jquery-master-javascript-clasico/src/styles/components/layout/layout-header.css" as="style">
     <link rel="stylesheet" href="/01-udemy/01-jquery-master-javascript-clasico/src/styles/components/layout/layout-header.css">
 
-    <link rel="preload" href="/01-udemy/01-jquery-master-javascript-clasico/src/styles/components/layout/layout-navbar.css" as="style">
-    <link rel="stylesheet" href="/01-udemy/01-jquery-master-javascript-clasico/src/styles/components/layout/layout-navbar.css">
-
+     <!--  ----------  buttons  ----------  -->
     <link rel="preload" href="/01-udemy/01-jquery-master-javascript-clasico/src/styles/components/buttons/buttons.css" as="style">
     <link rel="stylesheet" href="/01-udemy/01-jquery-master-javascript-clasico/src/styles/components/buttons/buttons.css">
 
+    <!--  ----------  layout-navbar  ----------  -->
+    <link rel="preload" href="/01-udemy/01-jquery-master-javascript-clasico/src/styles/components/layout/layout-navbar.css" as="style">
+    <link rel="stylesheet" href="/01-udemy/01-jquery-master-javascript-clasico/src/styles/components/layout/layout-navbar.css">
+
+    <!--  ----------  layout-navbar-themes-jquery-ui  ----------  -->
+    <link rel="preload" href="/01-udemy/01-jquery-master-javascript-clasico/src/styles/components/layout/themes-jquery-ui/themes-jquery-ui.css" as="style">
+    <link rel="stylesheet" href="/01-udemy/01-jquery-master-javascript-clasico/src/styles/components/layout/themes-jquery-ui/themes-jquery-ui.css">
+
+    <!--  ----------  layout-main  ----------  -->
     <link rel="preload" href="/01-udemy/01-jquery-master-javascript-clasico/src/styles/components/layout/layout-main.css" as="style">
     <link rel="stylesheet" href="/01-udemy/01-jquery-master-javascript-clasico/src/styles/components/layout/layout-main.css">
 
+    <!--  ----------  layout-footer  ----------  -->
     <link rel="preload" href="/01-udemy/01-jquery-master-javascript-clasico/src/styles/components/layout/layout-footer.css" as="style">
     <link rel="stylesheet" href="/01-udemy/01-jquery-master-javascript-clasico/src/styles/components/layout/layout-footer.css">
 
-    <!--  ----------  Scripts  ----------  -->
+    <!--  ----------  Script main  ----------  -->
     <script type="module" src="/01-udemy/01-jquery-master-javascript-clasico/src/main.js"> </script>
 
 </head>
@@ -87,32 +101,33 @@
     </div>
 
 
-     <!--  ----------  LAYOUT  ----------  -->
+    <!--  ----------  LAYOUT  ----------  -->
     <div class="layout" id="layout">
     
-        <!--  ----------  HEADER  ----------  -->
+        <!--  ----------  LAYOUT HEADER  ----------  -->
         <header class="layout__header" id="layoutHeader"> 
             <!--  *****  Renderizado del Header  *****  -->
         </header>
 
+        <!--  ----------  container Button Navbar  ----------  -->
+        <div class="layout__btn-navbar" id="btnNavbar">
+            <!--  *****  Renderizado del Botón del Navbar  *****  -->
+        </div>
         
-        <!--  ----------  NAVBAR  ----------  -->
+        <!--  ----------  LAYOUT NAVBAR  ----------  -->
         <nav class="layout__navbar draggable" id="layoutNavbar"> 
             <!--  *****  Renderizado del Navbar  *****  -->
         </nav>
 
-
-        <!--  -----  container Button Navbar  -----  -->
-        <div class="layout__btn-navbar" id="btnNavbar">
-            <!--  *****  Renderizado del Botón del Navbar  *****  -->
-        </div>
-
+        <!--  ----------  LAYOUT NAVBAR THEMES JQUERY UI  ----------  -->
+        <nav class="layout__navbar draggable" id="layoutNavbarThemesUI">
+            <!--  *****  Renderizado del Navbar Themes jQuery UI  *****  -->
+        </nav>
 
         <!--  ----------  MAIN  ----------  -->
         <main class="layout__main" id="layoutMain"> 
             <!--  *****  Renderizado del Main  *****  -->
         </main>
-
 
         <!--  ----------  FOOTER  ----------  -->
         <footer class="layout__footer" id="layoutFooter"> 
